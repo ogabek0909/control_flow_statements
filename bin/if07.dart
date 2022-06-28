@@ -35,5 +35,5 @@ String func(q) {
 }
 
 void main() {
-  print(func(3423));
+  print(func(0));
 }
