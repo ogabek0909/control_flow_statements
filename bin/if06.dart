@@ -13,6 +13,8 @@
         string: string with the result*/
 String func(a, b, c) {
   int x = 0;
+  String z = "there are a lot of positive numbers ";
+  String s = "there are a lot of negative numbers ";
   if (a > 0) {
     x += 1;
   }
@@ -33,10 +35,10 @@ String func(a, b, c) {
     y += 1;
   }
   if (x > y) {
-    return "there are a lot of positive numbers ";
+    return z;
   }
   if (y > x) {
-    return 'there are a lot of negative numbers';
+    return s;
   }
 }
 
