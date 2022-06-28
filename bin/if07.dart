@@ -18,13 +18,13 @@ String func(q) {
   String d = 'negative even number';
   String e = 'the number is zero';
   if (q > 0) {
-    if (q % 2 == 1) {
+    if ((q % 2) == 1) {
       return a;
     }
     return b;
   }
   if (q < 0) {
-    if (q % 2 == 1) {
+    if ((q % 2) == 1) {
       return c;
     }
     return d;
