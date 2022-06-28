@@ -11,37 +11,31 @@
         c: third number
     Returns:
         string: string with the result*/
-String func(a, b, c) {
-  int x = 0;
-  String z = "there are a lot of positive numbers ";
-  String s = "there are a lot of negative numbers ";
+
+String func(a) {
+  String z = "positive odd number";
+  String s = "positive even number";
+  String n = "negative odd number";
+  String m = "negative even number";
+  String k = "the number is zero";
   if (a > 0) {
-    x += 1;
-  }
-  if (b > 0) {
-    x += 1;
-  }
-  if (c > 0) {
-    x += 1;
-  }
-  int y = 0;
-  if (y < 0) {
-    y += 1;
-  }
-  if (y < 0) {
-    y += 1;
-  }
-  if (y < 0) {
-    y += 1;
-  }
-  if (x > y) {
-    return z;
-  }
-  if (y > x) {
+    if ((a % 2) == 1) {
+      return z;
+    }
     return s;
+  }
+  if (a < 0) {
+    if ((a % 2) == 1) {
+      return n;
+    }
+    return m;
+  }
+
+  if (a == 0) {
+    return k;
   }
 }
 
 void main() {
-  print(func(475, -45, 65));
+  print(func(-4));
 }
