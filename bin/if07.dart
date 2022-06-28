@@ -11,37 +11,29 @@
         a: integer
     Returns:
         string: the message to print */
-String func(number) {
-  String q = 'positive odd number ';
-  String w = 'positive even number ';
-  String e = 'negative odd number ';
-  String r = 'negative even number';
-  String t = 'the number is zero';
-  if (number > 0) {
-    if (number % 2 == 1) {
-      return q;
+String func(q) {
+  String a = 'positive odd number';
+  String b = 'positive even number ';
+  String c = 'negative odd number ';
+  String d = 'negative even number';
+  String e = 'the number is zero';
+  if (q > 0) {
+    if (q % 2 == 1) {
+      return a;
     }
+    return b;
   }
-  if (number > 0) {
-    if (1 - number % 2 == 1) {
-      return w;
+  if (q < 0) {
+    if (q % 2 == 1) {
+      return c;
     }
+    return d;
   }
-  if (number < 0) {
-    if (number % 2 == 1) {
-      return e;
-    }
-  }
-  if (number < 0) {
-    if (1 - number % 2 == 1) {
-      return r;
-    }
-  }
-  if (number == 0) {
-    return t;
+  if (q == 0) {
+    return e;
   }
 }
 
 void main() {
-  print(func(638));
+  print(func(3423));
 }
