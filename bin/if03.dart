@@ -6,4 +6,18 @@
         a: integer
     Returns:
         a: integer*/
-void main() {}
+int func(number) {
+  if (number > 0) {
+    return number + 1;
+  }
+  if (number < 0) {
+    return number - 2;
+  }
+  if (number == 0) {
+    return 10;
+  }
+}
+
+void main() {
+  print(func(0));
+}
