@@ -17,16 +17,16 @@ String func(q) {
   String c = 'negative odd number ';
   String d = 'negative even number';
   String e = 'the number is zero';
-  if (q > 0) {
-    if ((q % 2) == 1) {
-      return a;
-    }
+  if (q > 0 && q % 2 == 1) {
+    return a;
+  }
+  if (q > 0 && 1 - q % 2 == 1) {
     return b;
   }
-  if (q < 0) {
-    if ((q % 2) == 1) {
-      return c;
-    }
+  if (q < 0 && q % 2 == 1) {
+    return c;
+  }
+  if (q > 0 && 1 - q % 2 == 1) {
     return d;
   }
   if (q == 0) {
@@ -35,5 +35,5 @@ String func(q) {
 }
 
 void main() {
-  print(func(0));
+  print(func(-6763));
 }
