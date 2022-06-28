@@ -12,30 +12,37 @@
     Returns:
         string: string with the result*/
 
-String func(a) {
-  String z = "positive odd number";
-  String s = "positive even number";
-  String n = "negative odd number";
-  String m = "negative even number";
-  String k = "the number is zero";
+String func(a, b, c) {
+  int x = 0;
+  String z = "there are a lot of positive numbers";
+  String s = "there are a lot of negative numbers";
   if (a > 0) {
-    if ((a % 2) == 1) {
-      return z;
-    }
-    return s;
+    x += 1;
   }
+  if (b > 0) {
+    x += 1;
+  }
+  if (c > 0) {
+    x += 1;
+  }
+  int y = 0;
   if (a < 0) {
-    if ((a % 2) == 1) {
-      return n;
-    }
-    return m;
+    y += 1;
   }
-
-  if (a == 0) {
-    return k;
+  if (b < 0) {
+    y += 1;
+  }
+  if (c < 0) {
+    y += 1;
+  }
+  if (x > y) {
+    return z;
+  }
+  if (x < y) {
+    return s;
   }
 }
 
 void main() {
-  print(func(-4));
+  print(func(-5, -4, 34));
 }
