@@ -13,8 +13,8 @@
         string: the message to print */
 String func(q) {
   String a = 'positive odd number';
-  String b = 'positive even number ';
-  String c = 'negative odd number ';
+  String b = 'positive even number';
+  String c = 'negative odd number';
   String d = 'negative even number';
   String e = 'the number is zero';
   if (q > 0 && q % 2 == 1) {
