@@ -1,5 +1,5 @@
 void main() {
-  int a = 123 * 123, b = 3232, c = 90;
+  int a = 112, b = 13, c = 45;
   if (a > b) {
     if (a > c) {
       print(a);
